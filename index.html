@@ -1,45 +1,7 @@
 <!DOCTYPE html>
 
 <style>
-  /* Basic responsive scaling */
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  img, iframe, video {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Make text and layout fit smaller screens */
-  @media (max-width: 768px) {
-    body {
-      zoom: 0.9;
-      transform-origin: top left;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    div, section {
-      padding-left: 10px !important;
-      padding-right: 10px !important;
-    }
-  }
-
-  @media (max-width: 480px) {
-    body {
-      zoom: 0.8;
-    }
-  }
-</style>
-
-<!-- saved from url=(0014)about:internet -->
-<html lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style>
-  /* Hide Wix "Built on Wix" banner */
+  /* --- REMOVE WIX BANNER --- */
   #WIX_ADS, 
   #WIX_ADS_CONTAINER, 
   #WixFreemiumBanner,
@@ -58,18 +20,91 @@
     overflow: hidden !important;
   }
 
-  /* Remove extra top space */
-  body {
-    margin-top: 0 !important;
+  /* --- BASE MOBILE OPTIMIZATION --- */
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  img, iframe, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* --- TEXT AND SPACING TUNING --- */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* --- MOBILE ADJUSTMENTS --- */
+  @media (max-width: 768px) {
+    body {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    header, nav, footer {
+      padding: 0.5rem 1rem !important;
+    }
+
+    h1 {
+      font-size: 1.5rem !important;
+    }
+
+    h2 {
+      font-size: 1.25rem !important;
+    }
+
+    h3 {
+      font-size: 1.1rem !important;
+    }
+
+    p, li {
+      font-size: 0.95rem !important;
+    }
+
+    img.logo, img[alt*="logo"] {
+      width: 70% !important;
+      height: auto !important;
+      margin: 0 auto !important;
+      display: block;
+    }
+
+    section, div {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  }
+
+  /* --- SMALLER PHONES --- */
+  @media (max-width: 480px) {
+    body {
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      font-size: 1.3rem !important;
+    }
+
+    h2 {
+      font-size: 1.1rem !important;
+    }
+
+    img.logo, img[alt*="logo"] {
+      width: 60% !important;
+    }
   }
 </style>
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Wix.com Website Builder">
 
-  <link rel="icon" href="https://static.wixstatic.com/media/102de2_cda3f413ede14d0f9e2561d12efa5da4~mv2.png/v1/fill/w_106,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nglogo_white.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Wix.com Website Builder">
+
+<link rel="icon" href="https://static.wixstatic.com/media/102de2_cda3f413ede14d0f9e2561d12efa5da4~mv2.png/v1/fill/w_106,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nglogo_white.png" type="image/png">
 
 
   <!-- Safari Pinned Tab Icon -->
