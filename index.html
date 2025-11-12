@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+  /* Hide Wix "Built on Wix" banner */
+  #WIX_ADS, 
+  #WIX_ADS_CONTAINER, 
+  #WixFreemiumBanner,
+  .WixAds,
+  .FreemiumBannerDesktop,
+  .wix-global-css-banner,
+  .wix-ui-banner,
+  iframe[src*="wix.com"],
+  div[role="banner"][id*="WIX"],
+  div[id*="Freemium"],
+  div[data-testid="freemiumBanner"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* Remove extra top space */
+  body {
+    margin-top: 0 !important;
+  }
+</style>
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
